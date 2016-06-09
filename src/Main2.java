@@ -26,7 +26,7 @@ public class Main2 {
         boolean flag = true, flag1 = false;
         int iterator = 0;
         // And now use this to visit Google
-        driver.get("http://m-bitco.in"); //http://m-bitco.in
+        driver.get("https://www.facebook.com/login.php?login_attempt=1&lwv=110"); //http://m-bitco.in
 
 
        /* String jsCode = "var input  = document.getElementById('mailbox__login');"+
@@ -36,12 +36,12 @@ public class Main2 {
                         "document.getElementById('mailbox__login__domain').value = '@bk.ru';"+
                         "document.getElementById('mailbox__auth__button').click();";*/
 
-        String jsCode = "var input  = document.getElementsByName('log_email')[0];"+
-                "input.value = 'nahuy95@bk.ru';"+
-                "var input  = document.getElementsByName('pass')[0];"+
-                "input.value ='mentos1';"+
-                "    var buttons = document.getElementsByTagName('input');" +
-                "    buttons[2].click();";
+        String jsCode = "var input  = document.getElementById('email');"+
+                "input.value = '099 361 9100';"+
+                "var input  = document.getElementById('pass');"+
+                "input.value ='mentos1969';"+
+                "    var buttons = document.getElementById('loginbutton');" +
+                "    buttons.click();";
            /*   "    function clickButton(val)\n" +
                 "    {\n" +
                 "    var buttons = document.getElementsByTagName('input');\n" +
@@ -56,11 +56,12 @@ public class Main2 {
                 "}\n"+
                 "clickButton('�����');";*/ //����� ������ �� ��������
 
-        String jsCodeForClick = "var input  = document.getElementsByName('dhgfhghdsdf')[0];"+
-                "if(input)document.getElementsByName('dhgfhghdsdf')[0].click()";
+       String jsCodeForClick = "var input  = document.getElementsByClassName('_s0 _rv img')[0];"+
+                "if(input) input.click()";
 
-        String jsCodeForClick5 = "var input  = document.getElementsByName('hgkjgfdfgjfggds')[0];"+
-                "if(input)document.getElementsByName('hgkjgfdfgjfggds')[0].click()";
+        String jsCodeForClick5 =
+                "var input = document.getElementsByClassName('_42ft _4jy0 _4jy0 _4jy4 _517h _51sy')[2];" +
+                "input.click();";
 
         String jsCodeForClick10 = "var input  = document.getElementsByName('kjgjsdda')[0];"+
                 "if(input)document.getElementsByName('kjgjsdda')[0].click()";
@@ -103,15 +104,15 @@ public class Main2 {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
         if(flag) {
-            driver.get("http://m-bitco.in/account/bonus4");
+            driver.get("https://www.facebook.com/groups/208855902547192/members/");
             System.out.println("Page title is: " + driver.getTitle());
             js.executeScript(jsCodeForClick);
 
-            driver.get("http://m-bitco.in/account/bonus5");
+            //driver.get("http://m-bitco.in/account/bonus5");
             System.out.println("Page title is: " + driver.getTitle());
             js.executeScript(jsCodeForClick5);
 
-            driver.get("http://m-bitco.in/account/bonus6");
+/*          driver.get("http://m-bitco.in/account/bonus6");
             System.out.println("Page title is: " + driver.getTitle());
             js.executeScript(jsCodeForClick10);
 
@@ -143,10 +144,10 @@ public class Main2 {
             System.out.println("Page title is: " + driver.getTitle());
             js.executeScript(jsCodeForClick48);
 
-            flag1 = true;
+            flag1 = true;*/
         }
 
-        if(flag1) {
+/*        if(flag1) {
             while (true) {
                 iterator++;
 
@@ -210,10 +211,10 @@ public class Main2 {
                     js.executeScript(jsCodeForClick48);
                 }
             }
-        }
+        }*/
        // Thread thread = new Thread();
 
-        driver.quit();
+       // driver.quit();
     }
 
 }
